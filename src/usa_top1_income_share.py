@@ -21,6 +21,9 @@ conn.close()
 country_map = {'US': 'United States'}
 df['country'] = df['country'].map(country_map)
 
+# Convert income share from decimal to percentage
+df['value'] = df['value'] * 100
+
 # Plot
 plt.figure(figsize=(10,6))
 for country in df['country'].unique():
@@ -29,7 +32,7 @@ for country in df['country'].unique():
 
 plt.title("Top 1% Pre-Tax Income Share in the United States (1915–2020)")
 plt.xlabel("Year")
-plt.ylabel("Income Share")
+plt.ylabel("Income Share (%)")
 plt.legend()
 plt.grid(True)
 plt.tight_layout()
