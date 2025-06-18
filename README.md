@@ -20,8 +20,5 @@ The data was downloaded from the [World Inequality Database](https://wid.world/d
    - data (main table for inequality indicators)
 
 3. **Query and Visualization**  
-   Python and matplotlib are used to query the data and generate visualizations. Currently, the project includes a plot comparing the top 1% pre-tax income share in the U.S. from 1915 to 2020.
-
-## Sample Output
-
+   Python and matplotlib are used to query the data and generate visualizations. Currently, the project includes a plot comparing the top 1% pre-tax income share in the U.S. from 1915 to 2020, seen below
 ![Top 1% Income Share - USA](output/usa_top1_income_share.png)
