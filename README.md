@@ -8,7 +8,10 @@ This project provides an end-to-end pipeline for working with the World Inequali
 
 ```
 .
-├── data/                  # Raw and processed data
+├── data/                  # Raw/unprocessed data (csv) downloaded from WID
+├── demo/                  # Demo database and scripts
+│   ├── demo.db
+│   ├── export_demo_db.py
 ├── etl/                   # ETL scripts for CSV to SQLite
 │   ├── load_metadata.py
 │   ├── load_countries.py
@@ -74,9 +77,13 @@ Each script connects to a single SQLite database (`wid_world.db`) and appends it
 
 One example output of this project is a historical chart of top 1% income share in the United States:
 
-
+![Top 1% Income Share in US](output/usa_top1_income_share.png)
 
 This was created using the variable `sptinc992` (pre-tax income share for adults, equal-split) and filtered for `p99p100` percentiles.
+
+## Demo
+
+This repo includes a lightweight SQLite demo database (~75MB) in `demo/demo.db` with selected variables and countries (FR, US, IT, GB,MX) from 1980 onward, intended for fast prototyping and public API demos.
 
 ## License
 
