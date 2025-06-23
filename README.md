@@ -85,6 +85,8 @@ This was created using the variable `sptinc992` (pre-tax income share for adults
 
 This repo includes a lightweight SQLite demo database (~75MB) in `demo/demo.db` with selected variables and countries (FR, US, IT, GB,MX) from 1980 onward, intended for fast prototyping and public API demos.
 
+[Demo Link](https://y8o.github.io/wid-analysis/)
+
 ## License
 
 This project uses data made available by the World Inequality Lab. Refer to [https://wid.world](https://wid.world) for licensing and usage terms.
